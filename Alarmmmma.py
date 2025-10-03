@@ -4,7 +4,7 @@ from tkinter import messagebox
 import pygame as pg
 
 pg.init()
-pg.mixer.music.load("music.mp3")
+pg.mixer.music.load("reminder.mp3")
 
 def start():
     global alarm_time
@@ -16,7 +16,7 @@ def start():
 
 def stop():
     global alarm_time
-    alarm_time = ""
+    alarm_time = " "
     alarm.delete(0, END)
     pg.mixer.music.stop()
     messagebox.showinfo('Предупреждение', f'Будильник отключен')
